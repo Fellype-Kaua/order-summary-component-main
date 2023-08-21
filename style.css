@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+body main {
+  padding: 4rem 4rem 1rem 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  gap: 3rem;
+}
+body main #illustration {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin: -4rem -4rem 0rem -4rem;
+}
+body main h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+body main p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: gray;
+}
+body main #plan {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+body main #plan img {
+  width: 3.5rem;
+}
+body main #plan div #AnnualPlan {
+  font-size: 1.6rem;
+}
+body main #plan div #priceYear {
+  font-size: 1.2rem;
+  color: gray;
+}
+body main #plan a {
+  font-size: 1.6rem;
+}
+body main #payment {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  gap: 1rem;
+}
+body main #payment button {
+  height: 4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+body main #payment #proceed {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0px 10px 14px 5px rgba(56, 41, 224, 0.2);
+}
+body main #payment #proceed:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+body main #payment #cancel {
+  border: none;
+  background-color: transparent;
+  color: gray;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+  body main {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+  body main {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  body main {
+    width: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */
